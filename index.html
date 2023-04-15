@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vision Banner</title>
+</head>
+<body>
+    <div class="pp_wrapper">
+        <div class="slide_1">
+            <div class="element1">
+                <img src="./images/Slide1/bg1L.png" alt="">
+            </div>
+            <div class="element2">
+                <img src="./images/Slide1/bg1R.png" alt="">
+            </div>
+            <div class="updown" id="zip_tab"></div>
+        </div>
+        <div class="slide_2">
+            <div class="element3 hidden"><img src="" alt=""><img src="./images/Slide2/a/bg.jpg" alt=""></div>
+            <div class="part_1 hidden">
+                <div class="element3"><img src="" alt=""><img src="./images/Slide2/a/bg.jpg" alt=""></div>
+                <div class="element4"><img src="./images/Slide2/a/copy.png" alt=""></div>
+                <div class="element5"><img src="./images/Slide2/a/LogoWhite.png" alt=""></div>
+                <div class="element6"><img src="./images/Slide2/a/offerbase.png" alt=""></div>
+                <div class="element7"><img src="./images/Slide2/a/offer.png" alt=""></div>
+            </div>
+            <div class="part_2 hidden">
+                <div class="element8"><img src="./images/Slide2/b/Copy.png" alt=""></div>
+                <div class="element9"><img src="./images/Slide2/b/Couple.png" alt=""></div>
+                <div class="element10"><img src="./images/Slide2/b/offer.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+  
+          setTimeout(slide_2,false);
+          function slide_2(){
+
+            setTimeout(function(){
+
+              setTimeout(function(){
+                slide_2();
+              },10)
+            },5000)
+          }
+  
+  
+          $(".slide_2").click(function () {
+              window.open("{CLICK_MACRO}");
+          });
+          
+        });
+      </script>
+</body>
+
+
+
+
+</html>
